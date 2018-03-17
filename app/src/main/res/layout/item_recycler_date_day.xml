@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_1"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+
+    <View
+        android:id="@+id/center_line"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/choose_date_selected_ll"
+        android:layout_alignTop="@+id/choose_date_selected_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@color/blue_3"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/left_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/choose_date_selected_ll"
+        android:layout_alignTop="@+id/choose_date_selected_ll"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/center_line"
+        android:background="@color/blue_3"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/right_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/choose_date_selected_ll"
+        android:layout_alignTop="@+id/choose_date_selected_ll"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/center_line"
+        android:background="@color/blue_3"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/choose_date_selected_ll"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_dot_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/day_holiday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="0.5"
+            android:text="节日"
+            android:textColor="@color/black_2"
+            android:textSize="10dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/day_of_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="0.5"
+            android:text="1"
+            android:textColor="@color/black_2"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/day_begin_or_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="0.5"
+            android:text="开始"
+            android:textColor="@color/white_1"
+            android:textSize="10dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

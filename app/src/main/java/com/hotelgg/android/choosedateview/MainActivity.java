@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void show_date_view(View view){
         ChooseDateDialogFragment dialogFragment = new ChooseDateDialogFragment();
+
         dialogFragment.show(getSupportFragmentManager(), "date");
     }
 }
